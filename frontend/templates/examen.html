@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+<body>
+    {% include 'header.html' %}
+    <section id="main-content" class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+            <form id="upload-form" method="POST" action="/upload" enctype="multipart/form-data" class="card">
+                <div class="card-body">
+                    <h2>Extraer preguntas y respuestas de documentos</h2>
+                    <p>Añade tus examenes test desde documentos Word y Excel siguiendo los ejemplos</p>
+                    <label for="file-input" class="form-label">Elige un archivo</label>
+                    <input type="file" class="form-control" id="file-input" name="document" required>
+                    <label for="document-type" class="form-label">Selecciona tipo de documento:</label>
+                    <select class="form-select" name="document-type" id="document-type" required>
+                        <option value="" disabled selected>Selecciona tipo de documento:</option>
+                        <option value=".docx">Word</option>
+                        <option value=".xlsx">Excel</option>
+                    </select>
+                    <div>
+                        <a href="{{ url_for('static', filename='ejemplodeword.docx') }}" download>Ejemplo de Word</a><br>
+                        <a></a>
+                        <a href="{{ url_for('static', filename='ejemplodeexcel.xlsx') }}" download>Ejemplo de Excel</a>
+                    </div>
+                    <div>
+                        <label for="test_name" class="form-label">Nombre de examen:</label>
+                    </div>
+                    <input type="text" class="form-control" name="test_name" id="test_name" required>
+                    <button type="submit" class="botonprimario">Obtener preguntas del examen</button>
+                    <div id="upload-message" class="alert alert-success" role="alert" style="display: none;">Archivo cargado</div>
+                </div>
+            </form>
+            <div id="result"></div>
+            <form id="add-question-form" class="card">
+                <div class="card-body">
+                    <h2>Añadir pregunta</h2>
+                    <p>Añade preguntas una a una al examen que quieras rellenando el formulario</p>
+                    <label for="question_text">Pregunta:</label>
+                    <input type="text" class="form-control" name="question_text" id="question_text" required>
+                    <label for="answers">Respuestas (separadas por comas):</label>
+                    <input type="text" class="form-control" name="answers" id="answers" required>
+                    <label for="correct_answer">Respuesta correcta:</label>
+                    <input type="text" class="form-control" name="correct_answer" id="correct_answer" required>
+                    <label for="exam_name">Nombre de examen:</label>
+                    <input type="text" class="form-control" name="exam_name" id="exam_name" required>
+                    <button type="submit" class="botonprimario">Añadir pregunta</button>
+                    <div id="add-question-message" class="alert alert-success" role="alert" style="display: none;"></div>
+                </div>
+            </form>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <h2>Pedir test a ChatGPT</h2>
+                        <p>Pide exámenes de un tema en particular a ChatGPT y se subirán automáticamente para usarlos desde la skill</p>
+                        <input id="inputTest" type="text" class="form-control" placeholder="Sobre qué quieres el test" />
+                        <select id="numQuestions" class="form-control">
+                            <option value="">Selecciona el número de preguntas</option>
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                            <option value="20">20</option>
+                        </select>
+                        <button type="submit" id="btnTestGPT" class="botonprimario">Consultar</button>
+                        <textarea class="form-control" id="cajaTestRespuesta"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <h2>Calificaciones</h2>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Examen</th>
+                            <th scope="col">Calificación</th>
+                            <th scope="col">Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="calificaciones">
+                    </tbody>
+                </table>
+            </div>  
+    </section>
+    {% include 'footer.html' %}
+    <script src="{{ url_for('static', filename='examen.js') }}"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif, 'Roboto', sans-serif;
+    color: #333;
+    background: #f2f2f2;
+    font-size: 1em;
+    margin-top: 200px;
+  }
+  
+  h1, h2 {
+    font-size: 19px;
+    color: #333;
+    margin: 60px 0;
+    text-align: center;
+  }
+  
+  #main-content {
+    margin-top: 120px;
+  }
+  
+  /* Estilos para las tarjetas */
+  .card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 10px 90px;
+    margin-top: 5vh;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .card:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los campos del formulario */
+  .form-label {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-control,
+  .form-select,
+  .form-control2 {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+    margin-bottom: 20px;
+    min-height: 40px; /* Agregado para .form-control2 */
+  }
+  
+  .form-control:focus,
+  .form-select:focus {
+    border-color: #007bff;
+  }
+  
+  /* Estilos botón */
+  .btn, button[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn-primary:hover, button[type="submit"]:hover {
+    background: #0056b3;
+  }
+
+  
+  
+.accordion {
+    background-color: #ffffff;
+    font-family: 'Arial', sans-serif, 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #292929;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  

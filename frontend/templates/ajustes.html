@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajustes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+</head>
+<body>
+    {% include 'header.html' %}
+    <section id="main-content" class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                {% if message %}
+                    <div class="alert alert-success" role="alert">
+                        {{ message }}
+                    </div>
+                {% endif %}
+                <h1>Ajustes</h1>
+                <form action="/actualizar_api_key_chatgpt" method="post" class="card p-3">
+                    <label for="api_key1" class="form-label">API Key para ChatGPT:</label>
+                    <input type="text" id="api_key1" name="api_key1" class="form-control">
+                    <input type="submit" value="Guardar" class="btn btn-primary mt-3">
+                </form>
+                
+                <form action="/actualizar_api_key_chatpdf" method="post" class="card p-3">
+                    <label for="api_key2" class="form-label">API Key para ChatPDF:</label>
+                    <input type="text" id="api_key2" name="api_key2" class="form-control">
+                    <input type="submit" value="Guardar" class="btn btn-primary mt-3">
+                </form>
+            </div>
+        </div>
+    </section>
+    {% include 'footer.html' %}
+</body>
+</html>
