@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "flowbite": "^2.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

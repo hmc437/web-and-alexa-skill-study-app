@@ -1,0 +1,212 @@
+/* Estilos generales del encabezado */
+#main-header {
+  width: 100%;
+  background-color: #222;
+  z-index: 2000;
+  position: relative;
+  padding-top:10px;
+  padding-bottom:50px;
+  overflow: visible; 
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container{
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.head-container{
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;  
+  padding-bottom: 20px;
+  margin: 0; 
+}
+
+.logo img {
+  max-width: 250px;  /* Ajusta el ancho máximo como desees */
+  height: auto;  /* Esto mantendrá la relación de aspecto de la imagen */
+  margin: 0;
+}
+/* Estilos de la barra de navegación */
+nav {
+  width: 100%;
+  background-color: #222;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between; 
+}
+
+nav ul li {
+  font-size: 18px;
+}
+
+nav ul li a {
+  text-decoration: none !important;
+  color: white;
+  padding: 20px;
+}
+
+nav ul li a:hover, nav ul li a:active {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 8px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  background-color: #222;
+  width: 100%;
+  z-index: 1;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  justify-content: space-evenly;
+}
+
+.menu.active {
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a:hover {
+  color: rgb(255, 255, 255);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle.active {
+  position: relative;
+}
+
+.menu-toggle.active::before,
+.menu-toggle.active::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+}
+
+.menu-toggle.active::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu-toggle.active::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Estilo para el menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-item {
+  color: black;
+}
+
+
+.dropdown-toggle {
+  color: white; /* Color del texto del menú desplegable */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.dropdown-menu {
+  display: none; /* Oculta el menú desplegable por defecto */
+  flex-direction: column;
+  position: absolute;
+  background-color: #222; /* Color de fondo del menú desplegable */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2000; 
+  top: 100%;
+  margin-top: 0;  
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Muestra el menú desplegable al pasar el ratón por encima */
+}
+
+.dropdown-menu a {
+  color: black; /* Color del texto de los enlaces del menú desplegable */
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #333; /* Color de fondo de los enlaces del menú desplegable al pasar el ratón por encima */
+}
+
+/* Estilo para el enlace de inicio de sesión */
+nav ul li a[href="{{ url_for('login') }}"] {
+  color: white; /* Color del texto del enlace de inicio de sesión */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+nav ul li a[href="{{ url_for('login') }}"]:hover {
+  color: #ddd; /* Color del texto del enlace de inicio de sesión al pasar el ratón por encima */
+}
+
+
+/* Estilos para pantallas pequeñas (Responsive) */
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background-color: #222;
+    width: 100%;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    width: 100%;
+}
+
+  .menu-toggle img {
+    width: 30px; 
+    height: auto; 
+  }
+}

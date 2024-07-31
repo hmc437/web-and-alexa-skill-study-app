@@ -1,0 +1,132 @@
+#separator:tab
+#html:false
+to arise	arise - arose - arisen
+to awake	awake - awoke - awoken
+to be	be - was/were - been
+to bear	bear - bore - borne/born
+to beat	beat - beat - beaten/beat
+to become	become - became - become
+to begin	begin - began - begun
+to bend	bend - bent - bent
+to bet	bet - bet - bet
+to bid	bid - bid - bid
+to bind	bind - bound - bound
+to bite	bite - bit - bitten
+to bleed	bleed - bled - bled
+to blow	blow - blew - blown
+to break	break - broke - broken
+to breed	breed - bred - bred
+to bring	bring - brought - brought
+to broadcast	broadcast - broadcast - broadcast
+to build	build - built - built
+to burn	burn - burned - burned burn - burnt - burnt
+to burst	burst - burst - burst
+to buy	buy - bought - bought
+to cast	cast - cast - cast
+to catch	catch - caught - caught
+to choose	choose - chose - chosen
+to cling	cling - clung - clung
+to come	come - came - come
+to cost	cost - cost - cost
+to creep	creep - crept - crept
+to cut	cut - cut - cut
+to deal	deal - dealt - dealt
+to dig	dig - dug - dug
+to do	do - did - done
+to draw	draw - drew - drawn
+to dream	dream - dreamed - dreamed dream - dreamt - dreamt
+to drink	drink - drank - drunk
+to drive	drive - drove - driven
+to eat	eat - ate - eaten
+to fall	fall - fell - fallen
+to feed	feed - fed - fed
+to feel	feel - felt - felt
+to fight	fight - fought - fought
+to find	find - found - found
+to fit	fit - fit - fit fit - fitted - fitted
+to flee	flee - fled - fled
+to fling	fling - flung - flung
+to fly	fly - flew - flown
+to forbid	forbid - forbade - forbidden
+to forecast	forecast - forecast - forecast
+to forget	forget - forgot - forgotten
+to forgive	forgive - forgave - forgiven
+to forsake	forsake - forsook - forsaken
+to freeze	freeze - froze - frozen
+to get	get - got - got
+to give	give - gave - given
+to go	go - went - gone
+to grind	grind - ground - ground
+to grow	grow - grew - grown
+to hang	hang - hung - hung
+to have	have - had - had
+to hear	hear - heard - heard
+to hide	hide - hid - hidden
+to hit	hit - hit - hit
+to hold	hold - held - held
+to hurt	hurt - hurt - hurt
+to keep	keep - kept - kept
+to kneel	kneel - kneeled - kneeled kneel - knelt - knelt
+to know	know - knew - known
+to lay	lay - laid - laid
+to lead	lead - led - led
+to lean	lean - leaned - leaned lean - leant - leant
+to leap	leap - leaped - leaped leap - leapt - leapt
+to learn	learn - learned - learned learn - learnt - learnt
+to leave	leave - left - left
+to lend	lend - lent - lent
+to let	let - let - let
+to lie	lie - lay - lain
+to light	light - lighted - lighted light - lit - lit
+to lose	lose - lost - lost
+to make	make - made - made
+to mean	mean - meant - meant
+to meet	meet - met - met
+to mislay	mislay - mislaid - mislaid
+to mistake	mistake - mistook - mistaken
+to pay	pay - paid - paid
+to prove	prove - proved - proven/proved
+to put	put - put - put
+to quit	quit - quit - quit quit - quitted - quitted
+to read	read - read - read
+to rid	rid - rid - rid
+to ride	ride - rode - ridden
+to ring	ring - rang - rung
+to rise	rise - rose - risen
+to run	run - ran - run
+to say	say - said - said
+to see	see - saw - seen
+to seek	seek - sought - sought
+to sell	sell - sold - sold
+to send	send - sent - sent
+to set	set - set - set
+to shake	shake - shook - shaken
+to shed	shed - shed - shed
+to shine	shine - shone - shone shine - shined - shined
+to shoot	shoot - shot - shot
+to show	show - showed - shown/showed
+to shrink	shrink - shrank/shrunk - shrunk
+to shut	shut - shut - shut
+to sing	sing - sang - sung
+to sink	sink - sank - sunk
+to sit	sit - sat - sat
+to sleep	sleep - slept - slept
+to slide	slide - slid - slid
+to slit	slit - slit - slit
+to smell	smell - smelled - smelled smell - smelt - smelt
+to sneak	sneak - sneaked - sneaked sneak - snuck - snuck
+to speak	speak - spoke - spoken
+to speed	speed - sped - sped speed - speeded - speeded
+to spell	spell - spelled - spelled spell - spelt - spelt
+to spend	spend - spent - spent
+to spill	spill - spilled - spilled spill - spilt - spilt
+to spin	spin - spun - spun
+to spit	spit - spit - spit spit - spat - spat
+to split	split - split - split
+to spoil	spoil - spoiled - spoiled spoil - spoilt - spoilt
+to spread	spread - spread - spread
+to sting	sting - stung - stung
+to sweep	sweep - swept - swept
+to throw	throw - threw - thrown
+to weep	weep - wept - wept
+to write	write - wrote - written
